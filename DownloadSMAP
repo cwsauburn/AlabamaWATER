@@ -16,7 +16,7 @@ count=0
 index=$(($index-1))
 until [ $count -gt $index ]
 do   
-    outname="/gpfs01/hosted/fores/SMAP/L4_soil_moisture_geophysical/OD/"${myfile[$count]:75:36}""
+    outname="/***Please use your own route***/"${myfile[$count]:75:36}""
     wget -O $outname  "${myfile[$count]}"
     count=$(($count+1))
 done  
@@ -24,7 +24,7 @@ done
 count=0
 until [ $count -gt $index ]
 do 
-      outname="/gpfs01/hosted/fores/SMAP/L4_soil_moisture_geophysical/OD/"${myfile[$count]:75:36}""
+      outname="/***Please use your own route***/"${myfile[$count]:75:36}""
       FILESIZE=$(stat -c%s "$outname")
       if [ $FILESIZE -le 200 ]
       then  
@@ -36,7 +36,7 @@ done
 count=0
 until [ $count -gt $index ]
 do 
-      outname="/gpfs01/hosted/fores/SMAP/L4_soil_moisture_geophysical/OD/"${myfile[$count]:75:36}""
+      outname="/***Please use your own route***/"${myfile[$count]:75:36}""
       FILESIZE=$(stat -c%s "$outname")
       if [ $FILESIZE -le 200 ]
       then  
@@ -48,7 +48,7 @@ done
 count=0
 until [ $count -gt $index ]
 do 
-      outname="/gpfs01/hosted/fores/SMAP/L4_soil_moisture_geophysical/OD/"${myfile[$count]:75:36}""
+      outname="/***Please use your own route***/"${myfile[$count]:75:36}""
       FILESIZE=$(stat -c%s "$outname")
       if [ $FILESIZE -le 200 ]
       then  
@@ -60,7 +60,7 @@ done
 count=0
 until [ $count -gt $index ]
 do 
-      outname="/gpfs01/hosted/fores/SMAP/L4_soil_moisture_geophysical/OD/"${myfile[$count]:75:36}""
+      outname="/***Please use your own route***/"${myfile[$count]:75:36}""
       FILESIZE=$(stat -c%s "$outname")
       if [ $FILESIZE -le 200 ]
       then  
