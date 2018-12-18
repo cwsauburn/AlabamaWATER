@@ -31,7 +31,7 @@
   	    fsoil@_FillValue = -9999000
             fsoil@long_name = "fraction of soil saturation, top 2 layers"
             fsoil@units = "fraction"
-            Ofilename = "/gpfs01/hosted/fores/NWM/clip/ACTACFAL/Short_Range/Land_Output/"+rdate+".t"+sprinti("%0.2i",shour)+"z.land.f"+sprinti("%0.3i",sterm)+".clip.conus.nc"
+            Ofilename = "/***Please use your own route***/"+rdate+".t"+sprinti("%0.2i",shour)+"z.land.f"+sprinti("%0.3i",sterm)+".clip.conus.nc"
             Ofid = addfile(Ofilename,"c") 
             Ofid->SOILSAT_TOP = fsoil
             delete(Ifilename)
