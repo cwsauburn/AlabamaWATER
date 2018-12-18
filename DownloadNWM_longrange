@@ -48,7 +48,7 @@ do
     index=$(($index-1))
     until [ $count -gt $index ]
     do   
-        outname="/gpfs01/hosted/fores/NWM/FORECAST/Long_Range/Channel_Routing/mem"$mem""/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:26}""
+        outname="/***Please use your own route***/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:26}""
         wget -O $outname  "${myfile[$count]:42:129}"
         count=$(($count+1))
     done  
@@ -56,7 +56,7 @@ do
     count=$bechan
     until [ $count -gt $index ]
     do 
-          outname="/gpfs01/hosted/fores/NWM/FORECAST/Long_Range/Channel_Routing/mem"$mem""/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:26}""
+          outname="/***Please use your own route***/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:26}""
           FILESIZE=$(stat -c%s "$outname")
           if [ $FILESIZE -le 2000]
           then  
@@ -68,7 +68,7 @@ do
     count=$bechan
     until [ $count -gt $index ]
     do 
-          outname="/gpfs01/hosted/fores/NWM/FORECAST/Long_Range/Channel_Routing/mem"$mem""/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:26}""
+          outname="/***Please use your own route***/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:26}""
           FILESIZE=$(stat -c%s "$outname")
           if [ $FILESIZE -le 2000]
           then  
@@ -92,7 +92,7 @@ do
     index=$(($index-1))
     until [ $count -gt $index ]
     do   
-        outname="/gpfs01/hosted/fores/NWM/FORECAST/Long_Range/Land_Output/mem"$mem""/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:20}""
+        outname="/***Please use your own route***/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:20}""
         wget -O $outname  "${myfile[$count]:42:123}"
         count=$(($count+1))
     done  
@@ -100,7 +100,7 @@ do
     count=$beland
     until [ $count -gt $index ]
     do 
-          outname="/gpfs01/hosted/fores/NWM/FORECAST/Long_Range/Land_Output/mem"$mem""/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:20}""
+          outname="/***Please use your own route***/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:20}""
           FILESIZE=$(stat -c%s "$outname")
           if [ $FILESIZE -le 2000 ]
           then  
@@ -112,7 +112,7 @@ do
     count=$beland
     until [ $count -gt $index ]
     do 
-          outname="/gpfs01/hosted/fores/NWM/FORECAST/Long_Range/Land_Output/mem"$mem""/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:20}""
+          outname="/***Please use your own route***/""${myfile[$count]:100:8}""${myfile[$count]:128:6}""${myfile[$count]:145:20}""
           FILESIZE=$(stat -c%s "$outname")
           if [ $FILESIZE -le 2000 ]
           then  
