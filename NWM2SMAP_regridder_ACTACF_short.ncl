@@ -15,8 +15,8 @@ begin
   ;---------------------------------------------------------------;
   ; Set source and destination grid filenames.                    ;
   ;---------------------------------------------------------------;
-  dirm    = "/gpfs01/hosted/fores/NWM/clip/ACTACFAL/Short_Range/Land_Output/"              ; directory where source data resides
-  outdir  = "/gpfs01/hosted/fores/NWM/Interpolate/Short_Range/Soil_moisture/ACT_ACF/"      ; directory where regridded NWM data will be placed.
+  dirm    = "/***Please use your own route***/"              ; directory where source data resides
+  outdir  = "/***Please use your own route***/"      ; directory where regridded NWM data will be placed.
   
   if ( .not.isfilepresent( dstGridName ) ) then
      print( " ... source SMAP grid file not found : "+ dstGridName )
