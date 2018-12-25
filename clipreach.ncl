@@ -1,5 +1,4 @@
-  ; Clip origional NWM short, medium, and long range land model forecast into ACT, ACF and AL state domain
-  ; Select reach routing forecast for ACT basin
+  ; Clip origional NWM short, medium, and long range reach forecast into ACT, ACF and AL state domain
   ; Time: 12.11.2018 until now
   ; short range filename    20181210.t16(00-23)z.land.f005(001-018).conus.nc
   ; medium range filename   20181209.t18(00-18)z.land.f123(003-240).conus.nc
