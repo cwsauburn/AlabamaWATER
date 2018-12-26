@@ -13,7 +13,7 @@ bechan=0
 beland=0  
   
 yesterday=$(date -d "-1 day" +%Y%m%d)
- 
+today=$(date +'%Y%m%d') 
 for mem in {1..4}
 do
     site="ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/nwm/prod/nwm."$yesterday"/long_range_mem"$mem"/"
