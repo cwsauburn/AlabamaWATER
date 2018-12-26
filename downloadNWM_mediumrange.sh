@@ -15,6 +15,7 @@ bechan=0
 beland=0
 
 yesterday=$(date -d "-1 day" +%Y%m%d)
+today=$(date +'%Y%m%d')
 site="ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/nwm/prod/nwm."$yesterday"/medium_range/"
 wget $site
 grep "channel_rt" index.html>origionalnamechannel.txt
