@@ -12,6 +12,7 @@ rm origionalnameland.txt
 attention="PLEASE ATTENTION PLEASE ATTENTION PLEASE ATTENTION!!!"
 
 yesterday=$(date -d "-1 day" +%Y%m%d)
+today=$(date +'%Y%m%d')
 site="ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/nwm/prod/nwm."$yesterday"/short_range/"
 wget $site
 grep "channel_rt" index.html>origionalnamechannel.txt
