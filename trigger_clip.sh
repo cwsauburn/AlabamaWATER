@@ -17,4 +17,6 @@
   mpirun -np 1 ncl clipland.ncl>out
   mpirun -np 1 ncl clipreach.ncl>out
   
+  # remove original NWM download data here
+  
   exit 0
