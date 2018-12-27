@@ -5,8 +5,9 @@
   ; long range filename     20181211.t00(00-18)z.land_4.f024(024-720).conus.nc 
 
   ;------- define time range & reach number in retangle------------------------------------------------
-  bedate = 20181211 ;Attention! Date range can't exceed one months, for example, 20181130-20181202 is illegal. 
-  endate = 20181222 ;Attention! Date range can't exceed one months 
+  clipdate = getenv("CLIPDATE")
+  bedate = clipdate ;Attention! Date range can't exceed one months, for example, 20181130-20181202 is illegal. 
+  endate = clipdate ;Attention! Date range can't exceed one months 
   
   Nreach = 169720 ; The number of reach located in rectangle.
   Positionfile = "/gpfs01/hosted/fores/NWM/clip/channel_rt_position.nc"
