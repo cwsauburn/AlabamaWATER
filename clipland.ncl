@@ -10,9 +10,9 @@
   y1 = 826     ;lat2 = 29.351   y2 = -1,088,418.479
   y2 = 1523    ;lat1 = 35.378   y1 = -428,017.158 
 
-
-  bedate = 20181216 ;Attention! Date range can't exceed one months, for example, 20181130-20181202 is illegal. 
-  endate = 20181223 ;Attention! Date range can't exceed one months 
+  clipdate = getenv("CLIPDATE")
+  bedate = clipdate ;Attention! Date range can't exceed one months, for example, 20181130-20181202 is illegal. 
+  endate = clipdate ;Attention! Date range can't exceed one months 
 
   ;-------- main program --------------------------------------------------------------
   rdate = bedate
