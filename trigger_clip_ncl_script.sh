@@ -20,7 +20,7 @@
   #export CLIPDATE=20201030
   #deldate=20201030
   
-  ncl clipland.ncl>outland
-  ncl clipreach.ncl>outreach
+  ncl clip_saved_NWM_land_output.ncl>outland
+  ncl clip_saved_NWM_reach_output.ncl>outreach
 
   exit 0
